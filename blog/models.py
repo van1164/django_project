@@ -18,3 +18,14 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class premier_league(models.Model):
+    team = models.CharField(max_length = 200)
+    point = models.IntegerField(default=0)
+    win = models.IntegerField(default=0)
+    draw = models.IntegerField(default=0)
+    lose = models.IntegerField(default=0)
+    play =models.IntegerField(default=0)
+    gdp = models.IntegerField(default=0)
+    rank = models.IntegerField(default=0)
+    idx = models.CharField(default='normal',max_length=200)
