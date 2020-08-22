@@ -19,6 +19,13 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
+class news(models.Model):
+    title = models.CharField(max_length = 200)
+    url = models.CharField(max_length = 2000)
+    index = models.IntegerField(default=0)
+    img_index = models.CharField(default =' ',max_length = 200)
+
 class premier_league(models.Model):
     team = models.CharField(max_length = 200)
     point = models.IntegerField(default=0)

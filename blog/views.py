@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from .models import premier_league
-
+from .models import news
 # Create your views here.
 def Home(request):
-    return render(request, 'blog/Home.html', {})
+    all_news = news.objects.all().order_by('index')
+    newss = {'all_news':all_news}
+    return render(request, 'blog/Home.html',newss)
 
 def league_stats(request):
     return render(request, 'blog/league_stats.html',{})

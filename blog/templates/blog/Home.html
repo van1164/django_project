@@ -1,17 +1,14 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
     <head>
 
         <meta charset="utf-8">
-        <link rel="stylesheet" href="{% static 'css\style.css'}">
+        <link rel="stylesheet" href="{% static 'css\style.css'%}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>-->
-        <script src="script/script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Caveat|Hanalei|Dancing+Script|Gothic+A1|Nanum+Gothic|Poor+Story|Sunflower:300&display=swap"  rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Geostar&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Geostar|Nanum+Pen+Script|Nunito|Sunflower:300&display=swap" rel="stylesheet">
@@ -172,11 +169,10 @@ height: 10px;
         <div id="p1">오늘의 <strong style="color: rgb(255, 23, 3)">핫</strong>한 기사 &emsp; &emsp;  &emsp;  &emsp; &emsp;&emsp;&emsp; &emsp;오늘의 <strong style="color: rgb(255, 23, 3)">핫</strong>한 경기</div>
         <div id="ula" style="margin-left:50px;">
             <ul class="bxslider" id="ula">
-                    <li><a href="http://interfootball.heraldcorp.com/news/articleView.html?idxno=312095"><img src=https://imgnews.pstatic.net/image/413/2019/07/20/0000085450_001_20190720231027087.jpg?type=w647 /></a>
-                        <div><a href="http://interfootball.heraldcorp.com/news/articleView.html?idxno=312095" id="news">[ICC 현장리뷰] '그린우드 결승골' 맨유, 인터밀란 1-0 제압...프리시즌 3전 전승</a></div></li>
-                    <li><a href="http://interfootball.heraldcorp.com/news/articleView.html?idxno=312139"><img src=https://imgnews.pstatic.net/image/413/2019/07/21/0000085477_001_20190721164627207.jpg?type=w647></a>
-                        <div><a href=http://interfootball.heraldcorp.com/news/articleView.html?idxno=312139 id="news">"라이올라, 내 이익만 생각해주는 사람" 데 리트의 '무한 신뢰' </a></div></li>
-                    <li><a href="#"><img src=https://imgnews.pstatic.net/image/413/2019/07/20/0000085437_001_20190720195325970.jpg?type=w647></a></li>
+                    {%for news in all_news%}
+                    <li><a href="{{news.url}}"><img src={%static news.img_index%} /></a>
+                        <div><a href="{{news.url}}" id="news">{{news.title}}</a></div></li>
+                    {%endfor%}
                 </ul>
             </div>
                 <div id="right">
