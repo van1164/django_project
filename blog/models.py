@@ -36,3 +36,6 @@ class premier_league(models.Model):
     gdp = models.IntegerField(default=0)
     rank = models.IntegerField(default=0)
     idx = models.CharField(default='normal',max_length=200)
+    
+    def __str__(self):
+        return self.team
