@@ -299,63 +299,9 @@ text-align: left;
         width: 1800px;
     }
 
-
-    .loginBtn--google:focus {
-      outline: none;
-    }
-    .loginBtn--google:active {
-      box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
-    }
-
-    #loginBtn--google {
-      /*font-family: "Roboto", Roboto, arial, sans-serif;*/
-      background: #DD4B39;
-      float: inherit;
-      height: 36px;
-      margin-left: 800px;
-      margin-top: 60px;
-      box-sizing: border-box;
-      position: relative;
-      /* width: 13em;  - apply for fixed size */
-      margin: 0.2em;
-      padding: 0 15px 0 46px;
-      border: none;
-      text-align: left;
-      line-height: 34px;
-      white-space: nowrap;
-      border-radius: 0.2em;
-      font-size: 16px;
-      color: #FFF;
-
-    }
-    #loginBtn--google:before {
-      border-right: #BB3F30 1px solid;
-      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
-      content: "";
-      box-sizing: border-box;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 34px;
-      height: 100%;
-    }
-    #loginBtn--google:hover,
-    #loginBtn--google:focus {
-      background: #E74B37;
-    }
-
-
-
-  .login_button{
-
-    background-color: white;
-    height: 50px;
-    margin-left: 500px;
-  }
-
     a:visited{
       text-decoration: none;
-      color: rgb(120,120,120);
+      color: black;
     }
     a:link{
       text-decoration: none;
@@ -370,7 +316,7 @@ text-align: left;
         text-align: left;
         font-size: 70px;
         color: black;
-        width: auto;
+        width: 1000px;
         line-height: 1.8;
         font-family: 'Nanum Pen Script', cursive;
         margin-left:35px;
@@ -378,6 +324,11 @@ text-align: left;
         float: inline-start;
     
 
+    }
+    #Login{
+      margin-left: 350px;
+      font-size: 20px;
+      font-weight: bolder;
     }
 
     #nav_banner ul li{
@@ -514,25 +465,28 @@ margin-left: 50px;
     font-size: 35px;
     text-align: left;
     font-family: 'Poor story', cursive;
-    width: fit-content;
+    width: 500px;
   }
 
   #table_top_laliga{
     font-size: 35px;
     text-align: left;
     font-family: 'Poor story', cursive;
+    width: 500px;
   }
 
   #table_top_bun{
     font-size: 35px;
     text-align: left;
     font-family: 'Poor story', cursive;
+    width: 500px;
 }
 
 #table_top_ser{
   font-size: 35px;
   text-align: left;
   font-family: 'Poor story', cursive;
+  width: 500px;
 }
 #pp{
   margin: auto;
@@ -602,18 +556,17 @@ text-align: left;
 
 #player_stats{
   float: left;
-  margin-left: 30px;
-  height: 200px;
+  height: 230px;
+  width: 30%
 }
-
-#player_stata{
-  float: left;
-  margin-left: 500px;
-  height: 200px;
+#player_statsa{
+  height: 230px;
+  width: 30%
 }
-
 #px{
-  width: 80%;
+  width: 40%;
+  margin-right: 10px;
+  height: 800px;
 }
 #papa{
   width: 400px;
@@ -621,8 +574,9 @@ text-align: left;
   
 }
 #lala{
-  width: 40%;
+  width: 50%;
   float: left;
+  height: 800px;
 }
 
 #ppp{
